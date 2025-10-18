@@ -1,0 +1,773 @@
+int kiri_1 = 0, kanan_1 = 7,
+    kiri_2 = 1, kanan_2 = 8,
+    kiri_3 = 2, kanan_3 = 9,
+    kiri_4 = 3, kanan_4 = 10,
+    kiri_5 = 4, kanan_5 = 11,
+    kiri_6 = 5, kanan_6 = 12,
+    kiri_7 = 6, kanan_7 = 13;
+
+int bel = A5;
+
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode (kiri_1, OUTPUT); pinMode (kanan_1, OUTPUT);
+  pinMode (kiri_2, OUTPUT); pinMode (kanan_2, OUTPUT);
+  pinMode (kiri_3, OUTPUT); pinMode (kanan_3, OUTPUT);
+  pinMode (kiri_4, OUTPUT); pinMode (kanan_4, OUTPUT);
+  pinMode (kiri_5, OUTPUT); pinMode (kanan_5, OUTPUT);
+  pinMode (kiri_6, OUTPUT); pinMode (kanan_6, OUTPUT);
+  pinMode (kiri_7, OUTPUT); pinMode (kanan_7, OUTPUT);
+
+  pinMode(bel, OUTPUT);
+}
+
+void loop() {
+  for(int kiri = 0; kiri < 6; kiri++){
+    switch(kiri){
+      case(0):
+      digitalWrite (kiri_1, HIGH);
+      digitalWrite (kiri_2, HIGH);
+      digitalWrite (kiri_3, HIGH);
+      digitalWrite (kiri_4, HIGH);
+      digitalWrite (kiri_5, HIGH);
+      digitalWrite (kiri_6, HIGH);
+      digitalWrite (kiri_7, LOW);
+
+        for(int kanan = 0; kanan < 10; kanan++){
+          switch(kanan){
+            case(0):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+        
+            case(1):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(2):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, LOW);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(3):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(4):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(5):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(6):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(7):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(8):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(9):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+          }
+        }
+      break;
+
+      case(1):
+      digitalWrite (kiri_1, LOW);
+      digitalWrite (kiri_2, HIGH);
+      digitalWrite (kiri_3, HIGH);
+      digitalWrite (kiri_4, LOW);
+      digitalWrite (kiri_5, LOW);
+      digitalWrite (kiri_6, LOW);
+      digitalWrite (kiri_7, LOW);
+      
+        for(int kanan = 0; kanan < 10; kanan++){
+          switch(kanan){
+            case(0):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+        
+            case(1):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(2):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, LOW);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(3):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(4):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(5):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(6):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(7):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(8):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(9):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+          }
+        }
+      break;
+
+      case(2):
+      digitalWrite (kiri_1, HIGH);
+      digitalWrite (kiri_2, HIGH);
+      digitalWrite (kiri_3, LOW);
+      digitalWrite (kiri_4, HIGH);
+      digitalWrite (kiri_5, HIGH);
+      digitalWrite (kiri_6, LOW);
+      digitalWrite (kiri_7, HIGH);
+      
+        for(int kanan = 0; kanan < 10; kanan++){
+          switch(kanan){
+            case(0):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+        
+            case(1):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(2):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, LOW);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(3):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(4):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(5):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(6):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(7):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(8):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(9):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+          }
+        }
+      break;
+
+      case(3):
+      digitalWrite (kiri_1, HIGH);
+      digitalWrite (kiri_2, HIGH);
+      digitalWrite (kiri_3, HIGH);
+      digitalWrite (kiri_4, HIGH);
+      digitalWrite (kiri_5, LOW);
+      digitalWrite (kiri_6, LOW);
+      digitalWrite (kiri_7, HIGH);
+      
+        for(int kanan = 0; kanan < 10; kanan++){
+          switch(kanan){
+            case(0):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+        
+            case(1):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(2):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, LOW);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(3):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(4):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(5):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(6):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(7):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(8):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(9):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+          }
+        }
+      break;
+
+      case(4):
+      digitalWrite (kiri_1, LOW);
+      digitalWrite (kiri_2, HIGH);
+      digitalWrite (kiri_3, HIGH);
+      digitalWrite (kiri_4, LOW);
+      digitalWrite (kiri_5, LOW);
+      digitalWrite (kiri_6, HIGH);
+      digitalWrite (kiri_7, HIGH);
+      
+        for(int kanan = 0; kanan < 10; kanan++){
+          switch(kanan){
+            case(0):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+        
+            case(1):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(2):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, LOW);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(3):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(4):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(5):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(6):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(7):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(8):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(9):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+          }
+        }
+      break;
+
+      case(5):
+      digitalWrite (kiri_1, HIGH);
+      digitalWrite (kiri_2, LOW);
+      digitalWrite (kiri_3, HIGH);
+      digitalWrite (kiri_4, HIGH);
+      digitalWrite (kiri_5, LOW);
+      digitalWrite (kiri_6, HIGH);
+      digitalWrite (kiri_7, HIGH);
+      
+        for(int kanan = 0; kanan < 10; kanan++){
+          switch(kanan){
+            case(0):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+        
+            case(1):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(2):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, LOW);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(3):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(4):
+            digitalWrite (kanan_1, LOW);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(5):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(6):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, LOW);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(7):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, LOW);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, LOW);
+            digitalWrite (kanan_7, LOW);
+            delay(1000);
+            break;
+
+            case(8):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, HIGH);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+
+            case(9):
+            digitalWrite (kanan_1, HIGH);
+            digitalWrite (kanan_2, HIGH);
+            digitalWrite (kanan_3, HIGH);
+            digitalWrite (kanan_4, HIGH);
+            digitalWrite (kanan_5, LOW);
+            digitalWrite (kanan_6, HIGH);
+            digitalWrite (kanan_7, HIGH);
+            delay(1000);
+            break;
+          }
+        }
+      break;
+    }
+  }
+}
